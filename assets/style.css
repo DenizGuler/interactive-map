@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-thumb,
+/* ::-webkit-scrollbar-button, */
+::-webkit-scrollbar-track-piece,
+::-webkit-scrollbar-track {
+    background: none;
+}
+
+body {
+    background-color: rgb(18, 18, 18);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    display: block;
+    opacity: .64;
+    margin: 0 auto;
+    width: 1428px;
+    height: auto;
+}
+
+.container {
+    background-image : url("./empty-map.svg");
+    background-color : rgba(255, 255, 255, .64);
+    background-size : contain;
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 75%;
+    height: 100%;
+}
+
+.node-container {
+    z-index: 1;
+    top: 345px;
+    left: 600px;
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 162, 255, 1);
+    color: rgba(255, 255, 255, 0);
+    -webkit-transition: height 2s, width 2s, color 1s, background-color 1s, padding 1s;
+    transition: height 1s, width 1s, color .7s, background-color .7s, padding .7s;
+}
+
+.node-container:hover {
+    white-space: normal;
+    color: white;
+    background-color: rgba(0, 162, 255, .68);
+    padding: 15px;
+    height: 250px;
+    width: 350px;
+}
+
+.node-txt {
+    line-height: 21px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.node-txt:hover::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, .18);
+    border-radius: 3px;
+}
+
+.node-txt:hover::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, .28);
+}
+
+.node-txt:hover::-webkit-scrollbar-thumb:active {
+    background: rgba(255, 255, 255, .38);
+}
+
+.node-txt h1 {
+    margin: auto 0;
+    line-height: 34px;
+    font-size: 34px;
+    font-weight: 200px;
+}
+
+.node-txt p {
+    margin: auto;
+    font-size: 21px;
+    line-height: 23px;
+}
+
+.line-break {
+    margin: 10px auto;
+    width: 85%;
+    height: 1px;
+    background-color: currentColor;
+}
