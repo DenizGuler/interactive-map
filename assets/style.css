@@ -1,14 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
 ::-webkit-scrollbar {
     width: 6px;
 }
 
-::-webkit-scrollbar-corner,
-::-webkit-scrollbar-thumb,
-/* ::-webkit-scrollbar-button, */
-::-webkit-scrollbar-track-piece,
-::-webkit-scrollbar-track {
+::-webkit-scrollbar-corner, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track-piece, ::-webkit-scrollbar-track {
     background: none;
 }
 
@@ -26,10 +21,19 @@ img {
     height: auto;
 }
 
+.map {
+    /* filter: opacity(.64); */
+    background-image: url("./empty-map.svg");
+    /* background-color: rgba(255, 255, 255, .64); */
+    background-size: contain;
+    width: 1428px;
+    height: 787px;
+}
+
 .container {
-    background-image : url("./empty-map.svg");
-    background-color : rgba(255, 255, 255, .64);
-    background-size : contain;
+    /* background-image: url(./empty-map.svg); */
+    /* background-color: rgba(255, 255, 255, .64); */
+    /* background-size: contain; */
     margin: 0 auto;
     margin-top: 5%;
     width: 75%;
@@ -37,10 +41,10 @@ img {
 }
 
 .node-container {
-    z-index: 1;
-    top: 345px;
-    left: 600px;
-    position: absolute;
+    /* z-index: 1; */
+    top: 270px;
+    left: 390px;
+    position: relative;
     white-space: nowrap;
     overflow: hidden;
     display: flex;
