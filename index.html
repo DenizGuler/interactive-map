@@ -3,61 +3,75 @@
 <html>
 
 <head>
-    <link type="text/css" rel="stylesheet" href="./assets/style.css" />
-    <meta charset="UTF-8" />
-    <title>map test</title>
+  <link type="text/css" rel="stylesheet" href="./assets/style.css" />
+  <meta charset="UTF-8" />
+  <title>map test</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="map">
-            <div class="node-container">
-                <div class="node" style="top: 44.749%; left: 24.590%;">
-                    <div class="node-txt">
-                        <h1>node name</h1>
-                        <div class="line-break"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <div class="node" style="top: 35%; left: 27%;">
-                    <div class="node-txt">
-                        <h1>node name</h1>
-                        <div class="line-break"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut
-                            aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                            esse
-                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in
-                            culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-                <div class="node" style="top: 29.616%; left: 46.886%;">
-                    <div class="node-txt">
-                        <h1>node name</h1>
-                        <div class="line-break"></div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore
-                            et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                            nisi
-                            ut</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <script src="./JS/addPoint.js"></script>
+  <div id="open-menu" onclick="showMenu();">＋</div>
+  <div id="add-menu">
+    <div class="form-container">
+      <div id="ne-flex">
+        <input id="n-input" placeholder="North" type="number" />
+        <input id="e-input" placeholder="East" type="number" />
+      </div>
+      <input id="name-input" placeholder="Node Name" type="text" />
+      <textarea id="content-input" placeholder="Node Content" type="text" cols="30" rows="5"></textarea>
     </div>
+    <div id="add-button" onclick="useForm();">Add Node</div>
+    <div id="close-button" onclick="hideMenu();">✖</div>
+  </div>
+  <div class="container">
+    <div class="map">
+      <div class="node-container" id="node-container">
+        <div class="node" style="top: 44.749%; left: 24.590%;">
+          <div class="node-txt">
+            <h1>node name</h1>
+            <div class="line-break"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi
+              ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+              in
+              culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div class="node" style="top: 35%; left: 27%;">
+          <div class="node-txt">
+            <h1>node name</h1>
+            <div class="line-break"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi
+              ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+              esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+              in
+              culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+        <div class="node" style="top: 29.616%; left: 46.886%;">
+          <div class="node-txt">
+            <h1>node name</h1>
+            <div class="line-break"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore
+              et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi
+              ut</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
