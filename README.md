@@ -1,2 +1,2 @@
 # interactive-map
-interactive map using css and html
+interactive map using html, CSS, and JavaScript
